@@ -17,7 +17,7 @@ body {
 	left: 0;
 	width: 100%;
 	background: linear-gradient(90deg, #2a3d2a, #1e1e1e);
-	padding: 20px;
+	padding: 10px 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -25,9 +25,8 @@ body {
 }
 
 .header__logo {
-	font-family: 'Playfair Display', serif;
-	font-size: 28px;
-	color: #a8b5a8;
+	max-width: 100px;
+	width: 100%;
 }
 
 .header__nav {
@@ -81,6 +80,18 @@ body {
 	background: url('../images/hero-bg.jpg') no-repeat center/cover;
 	padding: 100px 20px 20px;
 	position: relative;
+}
+
+.hero-about {
+	background: url('../images/hero-about.jpg') no-repeat center/cover;
+}
+
+.hero-gameplay {
+	background: url('../images/hero-gameplay.jpg') no-repeat center/cover;
+}
+
+.hero-contacts {
+	background: url('../images/hero-contacts.jpg') no-repeat center/cover;
 }
 
 .hero__content {
@@ -532,30 +543,7 @@ body {
 	width: 100%;
 	max-width: 350px;
 	border-radius: 5px;
-}
-
-.hero {
-	min-height: auto;
-	padding: 80px 20px 40px;
-	background: none;
-	text-align: center;
-}
-
-.hero__content {
-	max-width: 800px;
-	margin: 0 auto;
-}
-
-.hero__title {
-	font-size: 36px;
-}
-
-.hero__text {
-	font-size: 18px;
-}
-
-.hero__image {
-	display: none;
+	object-fit: cover;
 }
 
 .contact-info {
@@ -656,7 +644,7 @@ body {
 
 .form-teaser__image {
 	width: 100%;
-	max-width: 500px;
+	max-width: 200px;
 	border-radius: 5px;
 }
 
@@ -705,7 +693,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto 40px;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 40px;
 }
 
 .footer__column {
@@ -791,7 +779,7 @@ body {
 }
 
 .legal {
-	padding: 80px 20px 40px;
+	padding: 140px 20px 40px;
 	max-width: 800px;
 	margin: 0 auto;
 }
@@ -864,7 +852,7 @@ body {
 	}
 
 	.header__burger--open .header__burger-line:nth-child(3) {
-		transform: rotate(-45deg) translate(5px, -5px);
+		transform: rotate(-43deg) translate(6px, -9px);
 	}
 
 	.hero {
